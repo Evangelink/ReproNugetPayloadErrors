@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MyProject</id>
+    <version>1.0.0.0</version>
+    <authors>Amaury</authors>
+    <owners>Amaury</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Blabla.</description>
+    <copyright>Copyright 2016</copyright>
+    <dependencies>
+      <group targetFramework="net45">
+        <dependency id="Microsoft.Bcl" version="1.1.9" />
+        <dependency id="Microsoft.Bcl.Build" version="1.0.14" />
+        <dependency id="Microsoft.Net.Http" version="2.2.28" />
+        <dependency id="Newtonsoft.Json" version="6.0.8" />
+        <dependency id="SQLite.Net-PCL" version="3.0.5" />
+        <dependency id="SQLiteNetExtensions" version="1.3.0" />
+        <dependency id="sqlite-net-pcl" version="1.0.11" />
+        <dependency id="SQLitePCL" version="3.8.7.2" />
+        <dependency id="SQLitePCL.raw_basic" version="0.7.1" />
+        <dependency id="WindowsAzure.MobileServices" version="1.3.2" />
+        <dependency id="WindowsAzure.MobileServices.SQLiteStore" version="1.0.4" />
+      </group>
+      <group targetFramework="win81">
+        <dependency id="Microsoft.Bcl" version="1.1.9" />
+        <dependency id="Microsoft.Bcl.Build" version="1.0.14" />
+        <dependency id="Microsoft.Net.Http" version="2.2.28" />
+        <dependency id="SQLite.Net-PCL" version="3.0.5" />
+        <dependency id="SQLiteNetExtensions" version="1.3.0" />
+        <dependency id="sqlite-net-pcl" version="1.0.11" />
+        <dependency id="SQLitePCL" version="3.8.7.2" />
+        <dependency id="SQLitePCL.raw_basic" version="0.7.1" />
+        <dependency id="Unity" version="3.5.1404.0" />
+        <dependency id="WindowsAzure.MobileServices" version="1.3.2" />
+        <dependency id="WindowsAzure.MobileServices.SQLiteStore" version="1.0.4" />
+      </group>
+      <group targetFramework="wpa81">
+        <dependency id="Microsoft.Bcl" version="1.1.9" />
+        <dependency id="Microsoft.Bcl.Build" version="1.0.14" />
+        <dependency id="Microsoft.Net.Http" version="2.2.28" />
+        <dependency id="SQLite.Net-PCL" version="3.0.5" />
+        <dependency id="SQLiteNetExtensions" version="1.3.0" />
+        <dependency id="sqlite-net-pcl" version="1.0.11" />
+        <dependency id="SQLitePCL" version="3.8.7.2" />
+        <dependency id="SQLitePCL.raw_basic" version="0.7.1" />
+        <dependency id="WindowsAzure.MobileServices" version="1.3.2" />
+        <dependency id="WindowsAzure.MobileServices.SQLiteStore" version="1.0.4" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- PCL -->
+    <file src="MyProject\bin\Release\**\MyProject*.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10" />
+    <!-- .NET 4.5 -->
+    <file src="MyProject\bin\Release\**\MyProject*.dll" target="lib\net45" />
+    <file src="MyProject.Desktop\bin\Release\MyProject.Desktop.dll" target="lib\net45\MyProject.Desktop.dll" />
+    <!-- Windows Store 8.1 -->
+    <file src="MyProject\bin\Release\**\MyProject*.dll" target="lib\win81" />
+    <file src="MyProject.Windows\bin\x64\Release\MyProject.Windows.dll" target="lib\win81\MyProject.Windows.dll" />
+	<file src="MyProject.Windows\bin\x64\Release\MyProject.Windows.pri" target="lib\win81\MyProject.Windows.pri" />
+    <!-- Windows Phone -->
+    <file src="MyProject\bin\Release\**\MyProject*.dll" target="lib\wpa81" />
+    <file src="MyProject.WindowsPhone\bin\ARM\Release\MyProject.WindowsPhone.dll" target="lib\wpa81\MyProject.WindowsPhone.dll" />
+	<file src="MyProject.WindowsPhone\bin\ARM\Release\MyProject.WindowsPhone.pri" target="lib\wpa81\MyProject.WindowsPhone.pri" />
+  </files>
+</package>
