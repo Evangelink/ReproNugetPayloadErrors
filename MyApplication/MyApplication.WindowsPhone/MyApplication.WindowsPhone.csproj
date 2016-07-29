@@ -145,6 +145,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -161,11 +162,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MyProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MyProject.1.0.0.0\lib\wpa81\MyProject.dll</HintPath>
+      <HintPath>..\packages\MyProject.1.0.0.1\lib\wpa81\MyProject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MyProject.WindowsPhone, Version=1.0.0.0, Culture=neutral, processorArchitecture=ARM">
-      <HintPath>..\packages\MyProject.1.0.0.0\lib\wpa81\MyProject.WindowsPhone.dll</HintPath>
+      <HintPath>..\packages\MyProject.1.0.0.1\lib\wpa81\MyProject.WindowsPhone.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
