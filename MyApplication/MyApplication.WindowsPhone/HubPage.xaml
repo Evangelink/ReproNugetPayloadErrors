@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:data="using:MyApplication.WindowsPhone.Data"
+    xmlns:proj="using:MyProject.WindowsPhone.Views"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     d:DataContext="{Binding Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
     mc:Ignorable="d">
@@ -70,9 +71,10 @@
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Margin="0,0,0,27.5">
+                                <!--<StackPanel Margin="0,0,0,27.5">
                                     <TextBlock Text="{Binding Title}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
-                                </StackPanel>
+                                </StackPanel>-->
+                                <proj:WelcomePage />
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>

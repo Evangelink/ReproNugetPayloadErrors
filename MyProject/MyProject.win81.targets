@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Condition="'$(Platform)' == 'x64'">
+		<ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\runtimes\win81\$(Platform)\MyProject.Windows.dll" />
+		<!-- <Reference Include="MyProject for Windows">
+			<HintPath>$(MSBuildThisFileDirectory)..\..\runtimes\win81\$(Platform)\MyProject.Windows.dll</HintPath>
+		</Reference> -->
+    </ItemGroup>
+</Project>

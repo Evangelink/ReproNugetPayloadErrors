@@ -62,7 +62,7 @@ namespace MyApplication.Windows
                 //Associate the frame with a SuspensionManager key                                
                 SuspensionManager.RegisterFrame(rootFrame, "AppFrame");
                 // Set the default language
-                rootFrame.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
+                //rootFrame.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 

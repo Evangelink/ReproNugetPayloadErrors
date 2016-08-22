@@ -161,14 +161,6 @@
       <HintPath>..\packages\WindowsAzure.MobileServices.SQLiteStore.1.0.4\lib\portable-win+net45+wp8+wpa81+monotouch+monoandroid\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MyProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MyProject.1.0.0.1\lib\wpa81\MyProject.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MyProject.WindowsPhone, Version=1.0.0.0, Culture=neutral, processorArchitecture=ARM">
-      <HintPath>..\packages\MyProject.1.0.0.1\lib\wpa81\MyProject.WindowsPhone.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -225,9 +217,11 @@
     <Error Condition="!Exists('..\packages\SQLitePCL.3.8.7.2\build\wpa81\SQLitePCL.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLitePCL.3.8.7.2\build\wpa81\SQLitePCL.props'))" />
     <Error Condition="!Exists('..\packages\SQLitePCL.3.8.7.2\build\wpa81\SQLitePCL.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLitePCL.3.8.7.2\build\wpa81\SQLitePCL.targets'))" />
     <Error Condition="!Exists('..\packages\SQLitePCL.raw_basic.0.7.1\build\wpa81\SQLitePCL.raw_basic.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLitePCL.raw_basic.0.7.1\build\wpa81\SQLitePCL.raw_basic.targets'))" />
+    <Error Condition="!Exists('..\packages\MyProject.1.0.0.7\build\wpa81\MyProject.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MyProject.1.0.0.7\build\wpa81\MyProject.targets'))" />
   </Target>
   <Import Project="..\packages\SQLitePCL.3.8.7.2\build\wpa81\SQLitePCL.targets" Condition="Exists('..\packages\SQLitePCL.3.8.7.2\build\wpa81\SQLitePCL.targets')" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.7.1\build\wpa81\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.7.1\build\wpa81\SQLitePCL.raw_basic.targets')" />
+  <Import Project="..\packages\MyProject.1.0.0.7\build\wpa81\MyProject.targets" Condition="Exists('..\packages\MyProject.1.0.0.7\build\wpa81\MyProject.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
